@@ -1,0 +1,64 @@
+.TodoList {
+    li {
+        padding: 15px 30px;
+        border-bottom: 1px solid #dcdcdc;
+        border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        + li {
+            border-top: none;
+        }
+        div {
+            display: flex;
+            width: 80%;
+            p {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                input {
+                    width: 170px;
+                    margin: 0 10px;
+                    height: 30px;
+                }
+                button {
+                    width: 50px;
+                    background: whitesmoke;
+                    color: #000;
+                    &:hover {
+                        background: #000;
+                        color: whitesmoke;
+                    }
+                }
+            }
+            // .save {
+            //     display: none;
+            // }
+        }
+        span {
+            margin-right: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        em {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        &.on span {
+            color: slategray;
+            font-weight: bold;
+        }
+        &.on em {
+            color: slategray;
+            text-decoration: line-through;
+            font-style: italic;
+        }
+        button {
+            width: 60px;
+            height: 40px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    }
+}
